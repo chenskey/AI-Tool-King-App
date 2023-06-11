@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 小工具</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body class="body">
+  <form action="/" method="post">
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1656443045373-edad904461d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzg1fHxzb3V2ZW5pcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="pokemon_logo" class="card-img">
+      <h1 class="card-title">伴手禮達人</h1>
+      <p class="card-QA">請輸入您要查詢的國家或城市名稱</p>
+      <p class="card-text">
+        <% if (description.length) { %>
+          <%= description %>
+        <% } else { %>
+          <%= '???' %>
+        <% } %>
+      </p>
+      <input type="text" name="description" class="card-input" placeholder="填寫國家或城市名稱" />
+      <button type="submit" class="card-btn">送出</button>
+    </div>
+  </form>
+</body>
+
+</html>
